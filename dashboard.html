@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | AI Virtual Dress Recommendation</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+</head>
+
+<body>
+
+<!-- ================= Navbar ================= -->
+
+<nav>
+
+<div class="logo">
+
+<img src="image/logo.png">
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Collection</a></li>
+
+<li><a href="#">History</a></li>
+
+<li><a href="#">Profile</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= Welcome ================= -->
+
+<section class="welcome">
+
+<h1>Welcome to AI Virtual Dress Recommendation</h1>
+
+<p>Select a retailer using a QR code or website link.</p>
+
+</section>
+
+<!-- ================= QR + Link ================= -->
+
+<section class="scanner-section">
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-qrcode"></i>
+
+Scan QR Code
+
+</h2>
+
+<div id="reader"></div>
+
+<button id="startScanner">
+
+Start Scanner
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-link"></i>
+
+Paste Store Website Link
+
+</h2>
+
+<input
+
+type="url"
+
+id="storeLink"
+
+placeholder="https://www.shop.in">
+
+<button id="loadBtn">
+
+Load Collection
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= Website Preview ================= -->
+
+<section class="preview">
+
+<h2>
+
+Retailer Preview
+
+</h2>
+
+<iframe
+
+id="websiteFrame"
+
+src=""
+
+title="Retail Website">
+
+</iframe>
+
+</section>
+
+<!-- ================= Categories ================= -->
+
+<section class="category">
+
+<h2>Categories</h2>
+
+<div class="category-list">
+
+<button>Sarees</button>
+
+<button>Shirts</button>
+
+<button>T-Shirts</button>
+
+<button>Kurtis</button>
+
+<button>Jeans</button>
+
+<button>Kids Wear</button>
+
+<button>Lehenga</button>
+
+<button>More</button>
+
+</div>
+
+</section>
+
+<!-- ================= Collection ================= -->
+
+<section class="collection">
+
+<h2>Featured Collection</h2>
+
+<div class="products">
+
+<div class="product">
+
+<img src="image/women.webp">
+
+<h3>Women's Dress</h3>
+
+<button>Try Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="images/sample2.jpg">
+
+<h3>Men's Shirt</h3>
+
+<button>Try Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="images/sample3.jpg">
+
+<h3>Saree</h3>
+
+<button>Try Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="images/sample4.jpg">
+
+<h3>Kurti</h3>
+
+<button>Try Now</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Upload Photo ================= -->
+
+<section class="upload">
+
+<h2>
+
+Upload Your Photo
+
+</h2>
+
+
+<input
+
+type="file"
+
+accept="image/*"
+
+id="photoUpload">
+
+<img
+
+id="previewImage"
+
+src=""
+
+style="display:none;">
+
+<button>
+
+Generate AI Try-On
+
+</button>
+
+</section>
+
+<!-- ================= Footer ================= -->
+
+<footer>
+
+<p>
+
+© 2026 AI Virtual Dress Recommendation System
+
+</p>
+
+</footer>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
